@@ -19,10 +19,10 @@ const clerkWebHooks = async(req,res) =>{
                     email:data.email_addresses[0].email_address,
                     firstName:data.first_name,
                     lastName:data.last_name,
-                    photo:data.image_url
+                    image:data.image_url
                 }
                 await userModel.create(userData)
-                res.json({})
+                res.json({message:"succesfully created"})
                 break;
             }
             case "user.updated":{
@@ -30,7 +30,7 @@ const clerkWebHooks = async(req,res) =>{
                     email:data.email_addresses[0].email_address,
                     firstName:data.first_name,
                     lastName:data.last_name,
-                    photo:data.image_url
+                    image:data.image_url
                 }
                 await userModel.findOneAndUpdate({clerkId:data.id},userData)
                 res.json({})
@@ -41,8 +41,9 @@ const clerkWebHooks = async(req,res) =>{
                 res.json({})
                 break;
             }
-            default:
+            default:{
                 break;
+            }
         }
 
     } catch (error) {

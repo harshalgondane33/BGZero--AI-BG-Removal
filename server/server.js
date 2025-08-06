@@ -9,8 +9,9 @@ const app=express()
 
 await connectDB()
 //middleware
-app.use(cors())
 app.use(express.json())
+app.use(cors())
+
 
 //api routes
 app.get('/',(req,res) => res.send(`API working`))
