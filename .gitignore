@@ -5,7 +5,8 @@
 # Environment variables
 # Ignore all .env files anywhere
 **/.env
-
+client/.env
+server/.env
 .env
 .env.*.local
 
