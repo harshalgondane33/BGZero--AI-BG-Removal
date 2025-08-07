@@ -97,7 +97,7 @@ BGZero is a modern full-stack AI-powered application that removes image backgrou
 
 <div align="center">
 
-  <img src="./screenshots/home.png" alt="Home Page" width="30%" />
+  <img src="./screenshots/Home.png" alt="Home Page" width="30%" />
   <img src="./screenshots/background.png" alt="home " width="30%" />
   <img src="./screenshots/result.png" alt="result" width="30%" />
   <br/>
